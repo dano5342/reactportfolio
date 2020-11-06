@@ -1,38 +1,50 @@
+/* Color pallette */
+/********  Mixins ******/
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-container {
+  width: 100%;
+  height: 8vh;
+  background-color: #171b16;
   display: flex;
-  flex-direction: column;
+  padding-left: 40px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-sub {
+  display: flex;
+  float: left;
+  justify-content: flex-end;
+  width: 80%;
+  height: 100%;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projects, .about, .skills, .doodles {
+  display: flex;
+  height: 100%;
+  align-content: center;
+  align-items: center;
 }
+
+.item {
+  margin: 20px;
+  text-decoration: none;
+  color: #66cf28;
+}
+
+.about:hover, .skills:hover,
+.projects:hover, .doodles:hover {
+  transition: 0.6s;
+  background-color: #66cf28;
+  cursor: pointer;
+}
+.about:hover a, .skills:hover a,
+.projects:hover a, .doodles:hover a {
+  transition: 0.6s;
+  color: #171b16;
+}
+
+/*# sourceMappingURL=App.css.map */
