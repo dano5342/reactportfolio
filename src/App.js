@@ -1,32 +1,56 @@
 
 import React from 'react'
+
+import { BrowserRouter, Route, Link } from 'react-router-dom'
+import projects from './components/projects/projects.js';
+import about from './components/about/about.js';
+import doodles from './components/doodles/doodles.js';
+import skills from './components/skills/skills.js';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header class="header">
-        <div className="nav-container">
-          <div className="logo">
-            <a href="" className="item">Daniel Ellis</a>
+    <BrowserRouter>
+      <div className="App">
+        <Route exact path="/" component={projects} />
+        <Route path="/skills" component={skills} />
+        <Route path="/doodles" component={doodles} />
+        <Route path="/about" component={about} />
+
+
+
+        <header>
+          <div className="nav-container">
+            <div className="logo">
+              <Link to="/" className="item">Daniel Ellis</Link>
+            </div>
+            <div className="nav-sub">
+              <Link to="/" className="nav-div-wrap">
+                <div className="link-cover">
+                  <Link to="/" className="item">Projects</Link>
+                </div>
+              </Link>
+              <Link to="/skills" className="nav-div-wrap">
+              <div className="link-cover">
+                <Link to="/skills" className="item">Skills</Link>
+              </div>
+              </Link>
+              <Link to="/doodles" className="nav-div-wrap">
+              <div className="link-cover">
+                <Link to="/doodles" className="item">Doodles</Link>
+              </div>
+              </Link>
+              <Link to="/about" className="nav-div-wrap">
+              <div className="link-cover">
+                <Link to="/about" className="item">About</Link>
+              </div>
+              </Link>
+            </div>
           </div>
-          <div className="nav-sub">
-            <div className="about">
-              <a href="" className="item">About</a>
-            </div>
-            <div className="projects">
-              <a href="" className="item">Projects</a>
-            </div>
-            <div className="skills">
-              <a href="" className="item">Skills</a>
-            </div>
-            <div className="doodles">
-              <a href="" className="item">Doodles</a>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
+        </header>
+      </div>
+    </BrowserRouter>
   );
 }
 

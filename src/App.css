@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 /* Color pallette */
 /********  Mixins ******/
 .App {
@@ -6,7 +7,6 @@
 
 .nav-container {
   width: 100%;
-  height: 8vh;
   background-color: #171b16;
   display: flex;
   padding-left: 40px;
@@ -22,7 +22,11 @@
   align-items: center;
 }
 
-.projects, .about, .skills, .doodles {
+.nav-div-wrap {
+  text-decoration: none;
+}
+
+.link-cover {
   display: flex;
   height: 100%;
   align-content: center;
@@ -33,16 +37,15 @@
   margin: 20px;
   text-decoration: none;
   color: #66cf28;
+  font-family: "Roboto", sans-serif;
 }
 
-.about:hover, .skills:hover,
-.projects:hover, .doodles:hover {
+.link-cover:hover {
   transition: 0.6s;
   background-color: #66cf28;
   cursor: pointer;
 }
-.about:hover a, .skills:hover a,
-.projects:hover a, .doodles:hover a {
+.link-cover:hover a {
   transition: 0.6s;
   color: #171b16;
 }

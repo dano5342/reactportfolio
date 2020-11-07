@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 /* Color pallette */
-$main-bg: red ;
 $white: white;
 $green: #66cf28;
 $black: #171b16;
 
 /********  Mixins ******/
+@mixin headerFont {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin textFont {
+    font-family: "Roboto", sans-serif;
+}
+
 @mixin navItems {
     display: flex;
     height: 100%;
@@ -23,12 +31,8 @@ $black: #171b16;
     text-align: center;
 }
 
-.header { 
-}
-
 .nav-container {
     width: 100%;
-    height: 8vh;
     background-color: $black;
     display: flex;
     padding-left: 40px;
@@ -44,7 +48,10 @@ $black: #171b16;
     align-items: center;
 }
 
-.projects, .about, .skills, .doodles {
+.nav-div-wrap {
+    text-decoration: none;
+}
+.link-cover {
     @include navItems()
 }
 
@@ -52,10 +59,11 @@ $black: #171b16;
     margin: 20px;
     text-decoration: none;
     color: $green;
+    @include textFont();
 }
 
-.about:hover, .skills:hover,
-.projects:hover, .doodles:hover {
+.link-cover:hover {
     @include navItemHover();
     cursor: pointer;
 }
+
