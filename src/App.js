@@ -13,14 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Route exact path="/" component={projects} />
-        <Route path="/skills" component={skills} />
-        <Route path="/doodles" component={doodles} />
-        <Route path="/about" component={about} />
-
-
-
-        <header>
+      <header>
           <div className="nav-container">
             <div className="logo">
               <Link to="/" className="item">Daniel Ellis</Link>
@@ -49,6 +42,11 @@ function App() {
             </div>
           </div>
         </header>
+        <Route exact path="/" component={projects} />
+        <Route path="/skills" component={skills} />
+        <Route path="/doodles" component={doodles} />
+        <Route path="/about" component={about} />
+        
       </div>
     </BrowserRouter>
   );
