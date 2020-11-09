@@ -9,23 +9,23 @@
     font-family: "Roboto", sans-serif;
 }
 
-.project {
-    margin: 24px;
+
+.projects-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
-.image {
-    max-width: 400px;
-}
 
-.project a {
-    text-decoration: none;
-}
-
-.project-title h3 {
+.title {
     @include headerFont();
-    font-size: 22px;
 }
-
-.project-category p {
-    @include textFont();
+.intro {
+    width: 80%;
+    padding: 5% 0% 0% 3em;
+}
+.col {
+    flex: 1;
 }

@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 /* Color pallette */
-$white: white;
-$green: #66cf28;
-$black: #171b16;
+@import './config/colors.scss';
 
-/********  Mixins ******/
 @mixin headerFont {
     font-family: 'Open Sans', sans-serif;
 }
@@ -27,6 +24,8 @@ $black: #171b16;
         color: $black;
     }
 }
+
+
 .App {
     text-align: center;
 }

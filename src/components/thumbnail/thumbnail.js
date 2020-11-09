@@ -8,10 +8,12 @@ export default function Thumbnail({image, link, title, category}) {
         <div className="project">
             <Link to={link}>
                 <div className="project-img">
-                    <img src={image} alt="Project" />
+                    <img src={image} alt="Project" className="image" />
                 </div>
-                <div className="project-title">{title}</div>
-                <div className="project-category">{category}</div>
+                <div className="project-title">
+                    <h3>{title}</h3>
+                </div>
+                <div className="project-category"><p>{category}</p></div>
             </Link>
         </div>
     );
