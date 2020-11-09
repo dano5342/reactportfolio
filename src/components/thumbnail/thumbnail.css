@@ -3,10 +3,15 @@
 .project {
   margin: 24px;
   align-items: flex-start;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
 }
 
 .image {
-  max-width: 400px;
+  max-width: 480px;
+  max-height: 370px;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
 }
 
 .project a {
@@ -25,9 +30,20 @@
   color: #171b16;
 }
 
+.project:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+}
 .project:hover .project-category, .project:hover .project-title {
   color: #66cf28;
   transition: 0.7s;
+  -webkit-transition: 0.7s;
+}
+.project:hover .image {
+  border-radius: 20px;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
 }
 
 /*# sourceMappingURL=thumbnail.css.map */

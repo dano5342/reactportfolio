@@ -1,7 +1,6 @@
 import React from 'react'
 import Thumbnail from '../thumbnail/thumbnail.js';
 import hadageto from '../../assets/images/hadageto.png';
-import ms2 from '../../assets/images/ms2.png';
 import lotrDash from '../../assets/images/lotrdash.png';
 import ms3 from '../../assets/images/ms3.png';
 import ms4 from '../../assets/images/ms4.png';
@@ -33,7 +32,6 @@ export default function Projects() {
                     title="Done With It"
                     category="Learning"
                 />
-
                 <Thumbnail
                     className="project2"
                     link="/milestone3"
