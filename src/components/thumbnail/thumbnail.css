@@ -2,6 +2,7 @@
 /********  Mixins ******/
 .project {
   margin: 24px;
+  align-items: flex-start;
 }
 
 .image {
@@ -12,13 +13,21 @@
   text-decoration: none;
 }
 
-.project-title h3 {
+.project-title {
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
+  line-height: 20px;
+  color: #171b16;
 }
 
-.project-category p {
+.project-category {
   font-family: "Roboto", sans-serif;
+  color: #171b16;
+}
+
+.project:hover .project-category, .project:hover .project-title {
+  color: #66cf28;
+  transition: 0.7s;
 }
 
 /*# sourceMappingURL=thumbnail.css.map */

@@ -11,6 +11,7 @@
 
 .project {
     margin: 24px;
+    align-items: flex-start;
 }
 
 .image {
@@ -21,11 +22,21 @@
     text-decoration: none;
 }
 
-.project-title h3 {
+.project-title {
     @include headerFont();
     font-size: 22px;
+    line-height: 20px;
+    color: $black;
 }
 
-.project-category p {
+.project-category {
     @include textFont();
+    color: $black;
+}
+
+.project:hover {
+    .project-category, .project-title {
+        color: $green;
+        transition: 0.7s;
+    }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Thumbnail from '../thumbnail/thumbnail.js';
 import hadageto from '../../assets/images/hadageto.png';
 import ms2 from '../../assets/images/ms2.png';
+import lotrDash from '../../assets/images/lotrdash.png';
 import ms3 from '../../assets/images/ms3.png';
 import ms4 from '../../assets/images/ms4.png';
 import "./projects.css"
@@ -13,8 +14,9 @@ export default function Projects() {
                 <div className="intro">
                     <p> 
                         I write and maintain <em><b>scalable codebases</b></em> for websites
-                        within the  <b>fullstack</b>. I link databases, payments, data from the backend and email
-                        whilst simultaneously desigining frontend components
+                        within the  <b>fullstack</b>. I link databases, payments, 
+                        data and email
+                        whilst simultaneously desigining frontend components.
                     </p>
                 </div>
                 <Thumbnail
@@ -24,6 +26,14 @@ export default function Projects() {
                     title="Hadageto"
                     category="Work"
                 />
+                <Thumbnail
+                    className="mobileApp"
+                    link="/mobileapp"
+                    image={''}
+                    title="Done With It"
+                    category="Learning"
+                />
+
                 <Thumbnail
                     className="project2"
                     link="/milestone3"
@@ -43,7 +53,7 @@ export default function Projects() {
                 <Thumbnail 
                     className="project3"
                     link="/milestone2"
-                    image={ms2}
+                    image={lotrDash}
                     title="Lord of the Rings Dashboard"
                     category="Learning"
                 />

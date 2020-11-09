@@ -4,7 +4,6 @@
   width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: auto;
 }
 
@@ -14,11 +13,12 @@
 
 .intro {
   width: 80%;
-  padding: 5% 0% 0% 3em;
+  padding-left: 3em;
 }
 
 .col {
   flex: 1;
+  padding-top: 1em;
 }
 
 /*# sourceMappingURL=projects.css.map */
