@@ -15,7 +15,7 @@ export default function Projects() {
                         I write and maintain <em><b>scalable codebases</b></em> for websites
                         within the  <b>fullstack</b>. I link databases, payments, 
                         data and email
-                        whilst simultaneously desigining frontend components.
+                        whilst simultaneously <em><b>desigining</b></em> frontend components.
                     </p>
                 </div>
                 <Thumbnail
@@ -24,13 +24,6 @@ export default function Projects() {
                     image={hadageto}
                     title="Hadageto"
                     category="Work"
-                />
-                <Thumbnail
-                    className="mobileApp"
-                    link="/mobileapp"
-                    image={''}
-                    title="Done With It"
-                    category="Learning"
                 />
                 <Thumbnail
                     className="project2"

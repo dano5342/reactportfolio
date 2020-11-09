@@ -14,6 +14,7 @@
     align-items: flex-start;
     transition: 0.7s;
     -webkit-transition: 0.7s;
+    text-align: start;
 }
 
 .image {
@@ -32,11 +33,13 @@
     font-size: 22px;
     line-height: 20px;
     color: $black;
+    padding-left: 4px;
 }
 
 .project-category {
     @include textFont();
     color: $black;
+    padding-left: 4px;
 }
 
 .project:hover {

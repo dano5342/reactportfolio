@@ -5,6 +5,7 @@
   align-items: flex-start;
   transition: 0.7s;
   -webkit-transition: 0.7s;
+  text-align: start;
 }
 
 .image {
@@ -23,11 +24,13 @@
   font-size: 22px;
   line-height: 20px;
   color: #171b16;
+  padding-left: 4px;
 }
 
 .project-category {
   font-family: "Roboto", sans-serif;
   color: #171b16;
+  padding-left: 4px;
 }
 
 .project:hover {
